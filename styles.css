@@ -1,0 +1,249 @@
+/* Estilos generales */
+body {
+    font-family: 'Georgia', serif;
+    background-color: #fdf6f0; /* Fondo suave color crema */
+    margin: 0;
+    padding: 0;
+    color: #4e3b31; /* Color oscuro para el texto, tono café */
+}
+
+h1 {
+    font-family: 'Lobster', cursive;
+    color: #d48b8d; /* Rosa pastel para el título */
+    text-align: center;
+    margin-top: 20px;
+    font-size: 3rem;
+}
+
+h2 {
+    font-family: 'Georgia', serif;
+    color: #6b3e2f; /* Un marrón suave para subtítulos */
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 20px;
+}
+
+#containerList {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 30px;
+    padding: 40px;
+}
+
+.product {
+    background-color: #fff5f0; /* Fondo suave rosado */
+    border: 1px solid #f4c7c1;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    border: none;
+}
+
+.card-img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.card-body {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #fff8f0;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #8e5a5a;
+    margin-bottom: 10px;
+}
+
+.card-subtitle {
+    font-size: 1.2rem;
+    color: #9e6a4d;
+    margin-bottom: 15px;
+}
+
+.card-price {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #d48b8d;
+    margin-bottom: 20px;
+}
+
+.btn-add-cart {
+    background-color: #e9aeb7; /* Rosa suave */
+    color: #fff;
+    border: none;
+    padding: 12px;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-add-cart:hover {
+    background-color: #f1c6c2;
+}
+
+#cartCount {
+    background-color: #d48b8d;
+    color: white;
+    padding: 12px;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 30px;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+#cart {
+    background-color: #fff7f4;
+    margin-top: 30px;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.05);
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #f4c7c1;
+    border-radius: 15px;
+    background-color: #fff0f0;
+}
+
+.cart-item-img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.cart-item-info {
+    flex-grow: 1;
+    padding-left: 15px;
+}
+
+.cart-item-info h5 {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #8e5a5a;
+}
+
+.cart-item-info p {
+    margin: 5px 0;
+    color: #9e6a4d;
+}
+
+.cart-item button {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    font-size: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cart-item button:hover {
+    background-color: #c0392b;
+}
+
+/* Fondo y estilo adicional para los botones y el carrito */
+#cartCount {
+    font-size: 1.8rem;
+    color: #fff;
+    background-color: #d48b8d;
+    padding: 20px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.cart {
+    background-color: #ffe6e1;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.cart-item {
+    margin-bottom: 25px;
+    padding: 15px;
+    background-color: #fff0f5;
+    border-radius: 15px;
+    border: 1px solid #f4b6b6;
+}
+
+.cart-item-info p {
+    color: #7a4a5b;
+}
+
+.cart-item button {
+    background-color: #d48b8d;
+    color: white;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 1.1rem;
+}
+
+.cart-item button:hover {
+    background-color: #f1a7a3;
+}
+
+/* Estilo de la lista de productos */
+#containerList {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 25px;
+    padding: 20px;
+    margin-bottom: 40px;
+}
+
+/* Animación al pasar el mouse */
+.product:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transform: scale(1.05);
+}
+
+/* Respuesta a pantallas pequeñas */
+@media (max-width: 768px) {
+    #containerList {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+
+    .card-title {
+        font-size: 1.2rem;
+    }
+
+    .btn-add-cart {
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+    .cart-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
